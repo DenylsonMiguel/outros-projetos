@@ -1,0 +1,13 @@
+@mixin centralizar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin animateBox {
+  animation-name: animateBox;
+  animation-duration: 5s;
+  transform-origin: center center;
+  animation-timing-function: linear;
+}

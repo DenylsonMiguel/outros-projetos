@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+span {
+    background-color: rgba(255,247,34,0.627);
+}
+
+.idade {
+  text-align: center;
+}
+
+#entrar {
+  display: none;
+}

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  transition: 0.3s;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(100px, 5vh, 200px);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: clamp(200px, 100vw, 600px);
+  margin: auto;
+  padding: 0px 5px;
+}
+
+div {
+  line-height: 30px;
+}
+
+div>h2 {
+  padding-top: 10px;
+}
+
+div>p,
+div>h2 {
+  padding-bottom: 10px;
+}

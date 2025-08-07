@@ -1,0 +1,29 @@
+@use 'cores' as colors;
+@use 'functions' as function;
+@use 'pases' as *;
+
+body {
+  height: 100vh;
+  
+  #container {
+    height: 100%;
+    background-color: colors.$colorLightBlue;
+    position: relative;
+    perspective: 1000px;
+    
+    #box {
+      @include function.centralizar;
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      border: 1px solid black;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.546);
+      background-color: colors.$colorOrange;
+    }
+    
+    #box:focus {
+      @include function.animateBox;
+      transition: 0.4s;
+    }
+  }
+}

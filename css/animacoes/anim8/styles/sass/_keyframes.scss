@@ -1,0 +1,32 @@
+@mixin tY12 {
+  transform: translateY(12px);
+}
+
+@mixin rotate360 {
+  transform: rotate(360deg);
+}
+
+@keyframes animateBox {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  
+  10% {
+    @include rotate360;
+    transform: translateY(-12px);
+  }
+  
+  70% {
+    @include rotate360;
+    @include tY12;
+  }
+  
+  80% {
+    @include rotate360;
+    @include tY12;
+  }
+  
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}

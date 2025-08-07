@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(150deg, rgb(219, 219, 219), rgb(204, 204, 204));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 200px;
+  min-height: 180px;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  padding: 20px;
+  font-family: Monaco, 'Courier New', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  border: 2px 2px 2px rgba(0, 0, 0, 0.427);
+}
+
+h4 {
+  margin-bottom: -10px;
+}

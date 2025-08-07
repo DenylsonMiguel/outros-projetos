@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+#container {
+  background-color: rgb(141, 237, 228);
+  width: 100vw;
+  height: 100vh;
+}
+
+#box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(227,102,146);
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "node003",
+  "version": "1.0.0",
+  "description": "Aprendendo node com o GROK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Denylson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

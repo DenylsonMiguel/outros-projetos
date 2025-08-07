@@ -1,0 +1,61 @@
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.box {
+  display: grid;
+  place-items: center;
+}
+
+.box>a {
+  position: absolute;
+  bottom: auto;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  transition: 1s;
+  z-index: 1;
+  padding: 0px;
+}
+
+#conteudo {
+  z-index: 1;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+.clicado {
+  transform: translateX(200px) scale(1.5) rotate(-15deg);
+  transition: 1s;
+}
+
+#paragrafos>p {
+  line-height: 2em;
+}
+
+#segundario-1,
+#segundario-3 {
+  position: relative;
+  right: 60vw;
+  width: 190px;
+}
+
+#segundario-2 {
+  position: relative;
+  left: 60vw;
+  width: 190px;
+}

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.men {
+  position: relative;
+  height: 100vmax;
+  width: 100vmax;
+}
+.men .head,
+.men .body,
+.men .lefthandle,
+.men .righthandle,
+.men .lefthand,
+.men .righthand,
+.men .leftfooter,
+.men .rightfooter,
+.men .leftfoot,
+.men .rightfoot {
+  display: inline-block;
+}
+
+.head,
+.lefthand,
+.righthand,
+.leftfoot,
+.rightfoot {
+  background-color: rgb(210, 179, 132);
+}
+
+.head {
+  width: 60px;
+  height: 60px;
+}
+
+.head,
+.lefthand,
+.righthand {
+  border-radius: 50%;
+}
+
+.lefthand,
+.righthand {
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

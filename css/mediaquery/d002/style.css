@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+  background-color: rgba(159, 159, 159, 0.357);
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  padding: 4px;
+}
+
+/* Menu padrão (desktop) */
+.menu {
+  display: block;
+}
+
+/* Pra telas menores que 768px (tablet pra baixo) */
+@media (max-width: 700px) {
+  .hamburguer {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+    
+  }
+  
+  .menu.ativo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  aside {
+    text-align: center;
+  }
+}
+
+header {
+  justify-content: space-between;
+  display: flex;
+  background-color: rgb(196, 55, 55);
+  padding: 10px;
+}
+
+header a {
+  color: #fff;
+  text-shadow: 1px 1px 2px #00000083;
+  text-decoration: none;
+}

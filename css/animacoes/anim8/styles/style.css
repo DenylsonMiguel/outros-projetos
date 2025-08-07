@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes animateBox {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+    transform: translateY(-12px);
+  }
+  70% {
+    transform: rotate(360deg);
+    transform: translateY(12px);
+  }
+  80% {
+    transform: rotate(360deg);
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+body {
+  height: 100vh;
+}
+body #container {
+  height: 100%;
+  background-color: rgb(157, 232, 250);
+  position: relative;
+  perspective: 1000px;
+}
+body #container #box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.546);
+  background-color: rgb(208, 130, 70);
+}
+body #container #box:focus {
+  animation-name: animateBox;
+  animation-duration: 5s;
+  transform-origin: center center;
+  animation-timing-function: linear;
+  transition: 0.4s;
+}
+
+/*# sourceMappingURL=style.css.map */
